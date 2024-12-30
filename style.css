@@ -1,0 +1,147 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(116, 78, 99);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outer-circle{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-circle{
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  background-color: rgb(101, 101, 149);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.text{
+  color: black;
+  font-size: 23px;
+}
+.minute{
+  font-size: 44px;
+}
+
+.sec{
+  font-size: 35px;
+}
+
+.msec{
+  font-size: 24px;
+}
+
+.button-wrapper{
+  width: 250px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: rgb(82, 78, 127);
+  color: black;
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color: white;
+  
+}
+
+.number{
+  color: wheat;
+}
+
+.time-stamp{
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.lap-item{
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(64, 32, 178);
+  text-align: center;
+  border-radius: 50px;
+  margin-bottom: 15px;
+}
+
+.laps{
+  height: 250px;
+  width: 250px;
+  overflow: auto;
+  list-style: none;
+  color: white;
+  position: relative;
+ margin-top: 30px;
+}
+
+.laps::-webkit-scrollbar{
+  display: none ;
+}
+
+.lap-clear-button{
+  position: fixed;
+  bottom: 50px ;
+  display: block;
+  z-index: 1000;
+  left: 50%;
+  transform: translate(-50%);
+  width: 130px;
+  padding: 10px 0;
+  border-radius: 50px;
+  background-color: rgba(185, 167, 167, 0.9);
+  border: 1px solid white;
+  color: black;
+  cursor: pointer;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.animation.bg{
+  background: linear-gradient(-45deg, #ee7752,orange,  #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 7s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
